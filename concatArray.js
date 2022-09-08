@@ -1,4 +1,4 @@
-const { template } = require('@babe/core');
+const { template } = require('@babe/core')
 
 function concatArray(array1, array2) {
     //code here
@@ -11,7 +11,7 @@ function concatArray(array1, array2) {
     } else if (array2.length === 0) {
         return array1;
     } else {
-        return array1.concat(array2);
+        return [...array1, ...array2];
     }
 }
 module.exports = concatArray;
